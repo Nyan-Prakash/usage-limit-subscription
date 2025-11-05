@@ -1,6 +1,7 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export function HomeClient() {
   return (
@@ -13,6 +14,9 @@ export function HomeClient() {
           <p className="text-lg leading-8 text-muted-foreground">
             A starter template with BetterAuth and Flowglad
           </p>
+          <Link href="/usage-tracking">
+            <Button>Try Usage Tracking</Button>
+          </Link>
         </div>
       </main>
     </div>
